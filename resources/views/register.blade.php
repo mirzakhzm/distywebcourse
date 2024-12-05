@@ -21,7 +21,7 @@
                                         <nav>
                                             <ul id="navigation">                                                                                          
                                                 <!-- Button -->
-                                                <li class="button-header margin-left"><a href="register" class="btn">Login</a></li>
+                                                <li class="button-header margin-left"><a href="login" class="btn">Login</a></li>
                                             </ul>
                                         </nav>
                                     </div>

@@ -54,7 +54,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo mb-25">
-                                    <img src="assets/img/logo/distylogo.png" class="img-fluid" style="max-width: 230px;" alt="Logo">
+                                    <img src="{{ asset('/assets/img/logo/distylogo.png') }}" class="img-fluid" style="max-width: 230px;" alt="Logo">
                                     
                                 </div>
                                 <div class="footer-tittle">

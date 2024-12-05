@@ -53,8 +53,6 @@
                         <!-- Login Form -->
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="card py-5 px-5" style="border: 3px solid #ddd; border-radius: 8px; ">
-                                <h3 class="text-center mb-4">Login</h3>
-
                                 <form action="{{ route('user.login') }}" method="POST" enctype="multipart/form-data">
                                     @if ($errors->any())
                                     <div class="alert alert-danger">
@@ -68,11 +66,11 @@
 
                                     <div class="form-group">
                                         <label for="name">Username:</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Username" style="font-size: 1.4rem;" required>
+                                        <input type="text" class="form-control" id="name" name="name" style="font-size: 1.4rem;" required>
                                     </div>
                                     <div class="form-group mt-3">
                                         <label for="password">Password:</label>
-                                        <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" style="font-size: 1.4rem;" required>
+                                        <input type="password" class="form-control" id="password" name="password" style="font-size: 1.4rem;" required>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
                                 </form>

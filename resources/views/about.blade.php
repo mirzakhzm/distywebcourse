@@ -111,171 +111,137 @@
             </div>
         </div>
         <!--? About Area-1 Start -->
-        <section class="about-area1 fix pt-10">
+        <section class="about-area1 fix" style="padding-bottom: 100px; padding-top: 100px;" >
             <div class="support-wrapper align-items-center">
                 <div class="left-content1">
                     <div class="about-icon">
                         <img src="assets/img/icon/about.svg" alt="">
                     </div>
-                    <!-- section tittle -->
+                    <!-- Bagian Judul -->
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
-                            <h2 class="">Learn new skills online with top educators</h2>
-                            <p>The automated process all your website tasks. Discover tools and 
-                                techniques to engage effectively with vulnerable children and young 
-                            people.</p>
+                            <h2 class="">Disty Academy</h2>
+                            <p>Disty Academy adalah lembaga pelatihan kerja yang
+                                didedikasikan untuk memberikan pembekalan
+                                keterampilan, pengetahuan dan sikap kerja yang
+                                diperlukan untuk berhasil di dunia kerja sesuai dengan
+                                Standar Kompetensi Kerja Nasional Indonesia (SKKNI).
+                                Dengan berbagai program pelatihan yang disesuaikan
+                                dengan kebutuhan industri dan dunia kerja, kami
+                                bertujuan untuk membantu individu mewujudkan potensi
+                                terbaik mereka.</p>
                         </div>
                     </div>
+
+                    {{-- Bagian Visi --}}
                     <div class="single-features">
                         <div class="features-icon">
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Techniques to engage effectively with vulnerable children and young people.</p>
+                            <p>Visi</p>
                         </div>
                     </div>
+                    
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Menjadi Lembaga pelatihan nasional yang terbaik, 
+                            terkemuka dan terpercaya dalam memberikan menyelenggarakan pendidikan 
+                            dan pelatihan berbasis kompetensi sesuai dengan Standar Kompetensi Kerja
+                            Nasional Indonesia (SKKNI).</p>
+                        </div>
+                    </div>
+
+                    {{-- Bagian Misi --}}
                     <div class="single-features">
                         <div class="features-icon">
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world  learning together.</p>
+                            <p>Misi</p>
                         </div>
                     </div>
 
                     <div class="single-features">
                         <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p>
+                            <p>Mendukung pengembangan sumberdaya manusia yang unggul dan berdaya saing</p>
+                        </div>
+                    </div>
+
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Melaksanakan pendidikan dan pelatihan berbasis kompetensi sesuai dengan SKKNI</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Menyelenggarakan pelatihan sesuai dengan kebutuhan pelanggan 
+                                serta mengikuti perkembangan zaman, agar dapat
+                                mendukung pertumbuhan dan pengembangan bisnis perusahaan 
+                                klien</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Menyediakan fasilitas dan lingkungan belajar 
+                                yang kondusif untuk pertumbuhan dan perkembangan 
+                                individu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Memberikan pelayanan terbaik 
+                            yang mengutamakan kepuasan pelanggan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Memfasilitasi sertifikasi kompetensi Badan Nasional Sertifikasi Profesi (BNSP) Republik Indonesia</p>
                         </div>
                     </div>
                 </div>
+
+                {{-- Konten sebelah kanan --}}
                 <div class="right-content1">
                     <!-- img -->
                     <div class="right-img">
                         <img src="assets/img/gallery/about.png" alt="">
 
-                        <div class="video-icon" >
-                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                        <div class="video-icon">
+                                <iframe width="620" height="315" src="https://www.youtube.com/embed/u9DBDb2TvMk?si=ZJhUgg2EWzGyvX8S&amp;controls=0" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                {{-- <i class="fas fa-play"></i> --}}
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Area End -->
-        <!--? top subjects Area Start -->
-        <div class="topic-area section-padding40">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <div class="section-tittle text-center mb-55">
-                            <h2>Explore top subjects</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic1.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic2.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic3.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic4.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic5.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic6.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic7.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic8.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- top subjects End -->
+
         <!--? About Area-3 Start -->
         <section class="about-area3 fix">
             <div class="support-wrapper align-items-center">
@@ -289,7 +255,7 @@
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-20">
                         <div class="front-text">
-                            <h2 class="">Learner outcomes on courses you will take</h2>
+                            <h2 class="">Keunggulan Kami</h2>
                         </div>
                     </div>
                     <div class="single-features">
@@ -297,7 +263,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Techniques to engage effectively with vulnerable children and young people.</p>
+                            <p>Instruktur Berpengalaman & Tersertifikasi BNSP RI</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -305,8 +271,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world
-                            learning together.</p>
+                            <p>Fasilitas Modern</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -314,21 +279,29 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world learning together.
-                            Online learning is as easy and natural.</p>
+                            <p>Kerjasama Industri Nasional</p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Bersertifikat BNSP Republik Indonesia</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Area End -->
+
         <!--? Team -->
         <section class="team-area section-padding40 fix">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>Community experts</h2>
+                            <h2>Instruktur Disty Academy</h2>
                         </div>
                     </div>
                 </div>
@@ -338,8 +311,7 @@
                             <img src="assets/img/gallery/team1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Urela</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Drs. Purwanto, M.Si.</a></h5>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -347,8 +319,7 @@
                             <img src="assets/img/gallery/team2.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Uttom</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Drs. Mochammad Saleh, M.Si.</a></h5>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -356,8 +327,7 @@
                             <img src="assets/img/gallery/team3.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Shakil</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Bayu Pancoroadi, ST.,MT.</a></h5>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -365,8 +335,7 @@
                             <img src="assets/img/gallery/team4.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Arafat</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Miftahul Ulum, ST., M.Si.</a></h5>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -374,8 +343,87 @@
                             <img src="assets/img/gallery/team3.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. saiful</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Mochamad Samsukadi, Lc., M.Th.I.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Galuh Tisna Widiana, M.Pd.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">.M. Yusuf Wibowo, ST.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">M. Ali Murtadlo, M.Kom.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Chandra Sukma Anugrah, M.Kom.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Wiwit Denny Fitriana, M.Si.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Dr. Nur Ulwiyah, M.Pd.I.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">.Dr. Miftakhul Ilmi S. Putra, M.Pd.</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Dr. Dhikrul Hakim, M.Pd.I</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Dr. Moh. Makmun, M.HI</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Mahmud Huda, M.S.I.</a></h5>
                         </div>
                     </div>
                 </div>
