@@ -25,7 +25,7 @@
                                                 <li><a href="contact">Contact</a></li>
                                                 <!-- Button -->
                                                 <li class="button-header margin-left"><a href="register" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="login" class="btn btn3">Log in</a></li>
+                                                <li class="button-header"><a href="welcome" class="btn btn3">Log in</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -76,7 +76,7 @@
                             </div>
                             <div class="features-caption">
                                 <h3>15+ Courses</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <p>A wide range of courses designed to enhance your skills and knowledge.</p>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="features-caption">
                                 <h3>Expert instructors</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <p>Learn from industry experts with years of experience in their fields.</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="features-caption">
                                 <h3>2 Month access</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <p>Enjoy unlimited access to all courses for two months.</p>
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             <div class="properties__caption">
                                 <p>User Experience</p>
                                 <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <p>The automated process handles all your website tasks efficiently.
 
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -137,13 +137,12 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star-half"></i>
                                         </div>
-                                        <p><span>(4.5)</span> based on 120</p>
                                     </div>
                                     <div class="price">
                                         <span>$135</span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="courses" class="border-btn border-btn2">Find out more</a>
                             </div>
 
                         </div>
@@ -157,8 +156,8 @@
                             </div>
                             <div class="properties__caption">
                                 <p>User Experience</p>
-                                <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <h3><a href="#">Advanced Laravel Techniques</a></h3>
+                                <p>Deep dive into advanced concepts and optimization in Laravel.
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
                                     <div class="restaurant-name">
@@ -169,13 +168,12 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star-half"></i>
                                         </div>
-                                        <p><span>(4.5)</span> based on 120</p>
                                     </div>
                                     <div class="price">
                                         <span>$135</span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="courses" class="border-btn border-btn2">Find out more</a>
                             </div>
                         </div>
                     </div>
@@ -188,8 +186,8 @@
                             </div>
                             <div class="properties__caption">
                                 <p>User Experience</p>
-                                <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                <h3><a href="#">Frontend Development Mastery</a></h3>
+                                <p>Master HTML, CSS, JavaScript for modern web designs.
 
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -201,46 +199,12 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star-half"></i>
                                         </div>
-                                        <p><span>(4.5)</span> based on 120</p>
                                     </div>
                                     <div class="price">
                                         <span>$135</span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Single -->
-                    <!-- Single -->
-                    <div class="properties pb-20">
-                        <div class="properties__card">
-                            <div class="properties__img overlay1">
-                                <a href="#"><img src="assets/img/gallery/featured2.png" alt=""></a>
-                            </div>
-                            <div class="properties__caption">
-                                <p>User Experience</p>
-                                <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
-
-                                </p>
-                                <div class="properties__footer d-flex justify-content-between align-items-center">
-                                    <div class="restaurant-name">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half"></i>
-                                        </div>
-                                        <p><span>(4.5)</span> based on 120</p>
-                                    </div>
-                                    <div class="price">
-                                        <span>$135</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="courses" class="border-btn border-btn2">Find out more</a>
                             </div>
 
                         </div>
@@ -251,66 +215,6 @@
         </div>
         <!-- Courses area End -->
         
-        <!--? Team -->
-        <section class="team-area section-padding40 fix">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <div class="section-tittle text-center mb-55">
-                            <h2>Community experts</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-active">
-                    <div class="single-cat text-center">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team1.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Urela</a></h5>
-                            <p>The automated process all your website tasks.</p>
-                        </div>
-                    </div>
-                    <div class="single-cat text-center">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team2.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Uttom</a></h5>
-                            <p>The automated process all your website tasks.</p>
-                        </div>
-                    </div>
-                    <div class="single-cat text-center">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Shakil</a></h5>
-                            <p>The automated process all your website tasks.</p>
-                        </div>
-                    </div>
-                    <div class="single-cat text-center">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team4.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Arafat</a></h5>
-                            <p>The automated process all your website tasks.</p>
-                        </div>
-                    </div>
-                    <div class="single-cat text-center">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Mr. saiful</a></h5>
-                            <p>The automated process all your website tasks.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services End -->
 
         <!--? About Area-2 Start -->
         <section class="about-area2 fix pb-padding" style="padding-top: 100px; padding-bottom: 100px;">
@@ -330,7 +234,7 @@
                                 and professional goals
                             with us.</h2>
                             <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
-                            <a href="#" class="btn">Join now for Free</a>
+                            <a href="#" class="btn">Join now</a>
                         </div>
                     </div>
                 </div>

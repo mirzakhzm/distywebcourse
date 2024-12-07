@@ -25,7 +25,7 @@
                                                 <li><a href="contact">Contact</a></li>
                                                 <!-- Button -->
                                                 <li class="button-header margin-left"><a href="register" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="login" class="btn btn3">Log in</a></li>
+                                                <li class="button-header"><a href="welcome" class="btn btn3">Log in</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -80,8 +80,8 @@
                                 <img src="assets/img/icon/icon1.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>60+ UX courses</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <h3>15+ Courses</h3>
+                                <p>A wide range of courses designed to enhance your skills and knowledge.</p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                             </div>
                             <div class="features-caption">
                                 <h3>Expert instructors</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <p>Learn from industry experts with years of experience in their fields.</p>
                             </div>
                         </div>
                     </div>
@@ -102,8 +102,8 @@
                                 <img src="assets/img/icon/icon3.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Life time access</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <h3>2 Month access</h3>
+                                <p>Enjoy unlimited access to all courses for two months.</p>
                             </div>
                         </div>
                     </div>

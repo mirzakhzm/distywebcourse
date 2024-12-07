@@ -47,7 +47,7 @@
                         <!-- Welcome Message -->
                         <div class="col-xl-6 col-lg-7 col-md-12" style="margin-top: 60px">
                             <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay="0.2s" style="color: black;">Selamat Datang<br>di Disty Academy</h1>
+                                <h1 data-animation="fadeInLeft" data-delay="0.2s" style="color: black;">Masukkan<br>Akun Anda</h1>
                             </div>
                         </div>
                         <!-- Login Form -->

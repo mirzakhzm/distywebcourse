@@ -25,7 +25,7 @@
                                             <li><a href="/contact">Contact</a></li>
                                             <!-- Button -->
                                             <li class="button-header margin-left"><a href="/register" class="btn">Join</a></li>
-                                            <li class="button-header"><a href="/login" class="btn btn3">Log in</a></li>
+                                            <li class="button-header"><a href="/welcome" class="btn btn3">Log in</a></li>
                                         </ul>
                                     </nav>
                                 </div>

@@ -10,8 +10,6 @@ class CourseController extends Controller
     public function index()
     {
         $courses = Course::all(); // Mengambil data dari database
-        return view('courses', compact('courses')); // Menggunakan view 'courses.blade.php'
+        return view('courses', compact('courses')); 
     }
-    
-
 }
