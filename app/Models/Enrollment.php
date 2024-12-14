@@ -11,12 +11,7 @@ class Enrollment extends Model
 {
     use HasFactory;
 
-    protected $tables = 'Enrollment';
-    protected $fillable = ['name', 'email','contact','paket','course_id'];
+    protected $table = 'enrollments';
+    protected $fillable = ['name','email','contact','paket','course_id'];
 
-    // Relasi dengan model Course
-    public function course()
-    {
-        return $this->belongsTo(Course::class);
-    }
 }

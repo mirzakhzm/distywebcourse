@@ -11,12 +11,15 @@ use Illuminate\Http\Request;
 class EnrollmentController extends Controller
 {
     // Menampilkan form enrollment berdasarkan course_id
-    public function create($course_id)
+    public function create(Request $request)
     {
-        $course = Course::findOrFail($course_id);
-        return view('enrollment', compact('course'));
+        $course = Course::findOrFail($request->course_id);
+    
+        return view('enrollment', [
+            'course' => $course
+        ]);
     }
-
+    
     // Menyimpan data enrollment
     public function store(Request $request)
     {
@@ -24,21 +27,15 @@ class EnrollmentController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',
-            'contact' => 'required|numeric',
-            'paket' => 'required|string|max:255',
+            'contact' => 'required|string',
+            'paket' => 'required|string',
             'course_id' => 'required|exists:courses,id',
         ]);
-
-        // Simpan data enrollment
-        Enrollment::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'contact' => $validated['contact'],
-            'paket' => $validated['paket'],
-            'course_id' => $validated['course_id'],
-        ]);
-
-        // Redirect atau pesan sukses setelah berhasil menyimpan
-        return redirect()->route('courses')->with('success', 'You have successfully enrolled!');
+    
+        // Simpan data pendaftaran ke database
+        Enrollment::create($validated);    
+        // Redirect ke halaman sukses
+        return redirect('/courses')->with('success', 'Pendaftaran berhasil!');
     }
+    
 }

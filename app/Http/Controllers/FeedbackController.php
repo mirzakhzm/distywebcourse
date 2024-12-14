@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Feedback;
-use App\Models\Enrollment;
 use Illuminate\Http\Request;
-
 
 class FeedbackController extends Controller
 
@@ -23,6 +21,6 @@ class FeedbackController extends Controller
         Feedback::create($validated);
 
         // Redirect atau pesan sukses
-        return redirect()->back()->with('success', 'Feedback berhasil dikirim!');
+        return redirect('contact')->back()->with('success', 'Feedback berhasil dikirim!');
     }
 }

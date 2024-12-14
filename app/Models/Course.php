@@ -11,4 +11,10 @@ class Course extends Model
 
     protected $tables = 'Enrollment';
     protected $fillable = ['title', 'category','description','image','price','rating'];
+
+
+    public function enrollments()
+    {
+        return $this->hasMany(Enrollment::class);
+    }
 }

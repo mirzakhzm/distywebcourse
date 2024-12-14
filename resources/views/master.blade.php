@@ -33,13 +33,63 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder1.png" alt="">
+                    <img src="{{ asset('/assets/img/logo/loder1.png') }}" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!-- Preloader Start -->
-    @yield('header')
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="/"><img src="{{ asset('/assets/img/logo/distylogo.png') }}" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="/courses">Courses</a></li>
+                                                <li><a href="/about">About</a></li>
+                                                <li><a href="/contact">Contact</a></li>
+                                                <li><a href="/certificates">Certificate</a></li>
+                                                @auth
+                                                <li>
+                                                    <form action="{{ route('user.logout') }}" method="POST" class="d-inline-block">
+                                                        @csrf
+                                                            <button type="submit" class="btn btn-danger">Logout</button>
+                                                    </form>
+                                                </li>
+                                                @else
+                                                 <!-- Tampilkan tombol ini jika user belum login -->
+                                                    <li class="button-header margin-left"><a href="/register" class="btn">Join</a></li>
+                                                    <li class="button-header"><a href="/welcome" class="btn btn3">Login</a></li>
+                                                @endauth
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12 text-center">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
 
     @yield('konten')
 

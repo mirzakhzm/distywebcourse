@@ -11,7 +11,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2 py-4">
                                 <div class="logo">
-                                    <a href="/"><img src="assets/img/logo/distylogo.png" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
+                                    <a href="/home"><img src="assets/img/logo/distylogo.png" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10 py-4">
@@ -38,6 +38,9 @@
 
 @section('konten')
 <main>
+    {{-- autentikasi --}}
+
+
     <section class="slider-area">
         <div class="slider-active">
             <!-- Single Slider -->
@@ -53,24 +56,34 @@
                         <!-- Login Form -->
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="card py-5 px-5" style="border: 3px solid #ddd; border-radius: 8px; ">
-                                <form action="{{ route('user.login') }}" method="POST" enctype="multipart/form-data">
-                                    @if ($errors->any())
-                                    <div class="alert alert-danger">
-                                        <ul>
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
+                                <form action="{{ route('login.store') }}" method="POST" enctype="multipart/form-data">
+                                    @csrf <!-- Tambahkan CSRF token untuk keamanan -->
+                                    @if(session()->has('success'))
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        {{ session('success') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     @endif
-
+                            
+                                    @if(session()->has('loginError'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        {{ session('loginError') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                     @endif
+                                
                                     <div class="form-group">
-                                        <label for="name">Username:</label>
-                                        <input type="text" class="form-control" id="name" name="name" style="font-size: 1.4rem;" required>
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email" style="font-size: 1.4rem;" autofocus required>
                                     </div>
                                     <div class="form-group mt-3">
                                         <label for="password">Password:</label>
                                         <input type="password" class="form-control" id="password" name="password" style="font-size: 1.4rem;" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label>
+                                            <input type="checkbox" name="remember"> Remember Me
+                                        </label>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
                                 </form>

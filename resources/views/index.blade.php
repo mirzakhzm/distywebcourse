@@ -1,49 +1,5 @@
 @extends('master')
 
-@section('header')
-    <header>
-        <!-- Header Start -->
-        <div class="header-area header-transparent">
-            <div class="main-header ">
-                <div class="header-bottom header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="/"><img src="assets/img/logo/distylogo.png" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">                                                                                          
-                                                <li><a href="courses">Courses</a></li>
-                                                <li><a href="about">About</a></li>
-                                                <li><a href="contact">Contact</a></li>
-                                                <!-- Button -->
-                                                <li class="button-header margin-left"><a href="register" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="welcome" class="btn btn3">Log in</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12 text-center">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </div>
-        <!-- Header End -->
-    </header>
-@endsection
-
 @section('konten')
     <main>
         <!--? slider Area Start-->
@@ -57,7 +13,7 @@
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">Online course<br> platform</h1>
                                     <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses and certificates online from world-class companies</p>
-                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +190,6 @@
                                 and professional goals
                             with us.</h2>
                             <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
-                            <a href="#" class="btn">Join now</a>
                         </div>
                     </div>
                 </div>

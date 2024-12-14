@@ -54,7 +54,7 @@
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="card py-5 px-5" style="border: 3px solid #ddd; border-radius: 8px; ">
                                 
-                                <form action="{{ route('user.register') }}" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('register.store') }}" method="POST" enctype="multipart/form-data">
                                     @if ($errors->any())
                                     <div class="alert alert-danger">
                                         <ul>
@@ -70,12 +70,12 @@
                                         <input type="text" class="form-control" id="name" name="name"  style="font-size: 1.4rem;" required>
                                     </div>
                                     <div class="form-group mt-3">
-                                        <label for="password">Password:</label>
-                                        <input type="password" class="form-control" id="password" name="password"  style="font-size: 1.4rem;" required>
-                                    </div>
-                                    <div class="form-group mt-3">
                                         <label for="email">Email:</label>
                                         <input type="email" class="form-control" id="email" name="email" style="font-size: 1.4rem;" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="password">Password:</label>
+                                        <input type="password" class="form-control" id="password" name="password"  style="font-size: 1.4rem;" required>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block mt-4">Daftar</button>
                                 </form>
