@@ -57,3 +57,9 @@ use App\Http\Controllers\CertificateController;
     
     Route::post('/logout', [UserController::class, 'logout'])->name('user.logout')->middleware('auth');
 
+
+    // Route::middleware(['admin.only'])->group(function () {
+    //     Route::get('/admin', [FilamentController::class, 'index']);
+    //     // Tambahkan rute lain yang memerlukan akses admin
+    // });
+    

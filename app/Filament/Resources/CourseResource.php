@@ -26,22 +26,35 @@ class CourseResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('category')
+                Forms\Components\Select::make('category')
                     ->required()
-                    ->maxLength(255),
+                    ->options([
+                        'Web Development' => 'Web Development',
+                        'Web Design' => 'Web Design',
+                        'Advanced Learning' => 'Advanced Learning',
+                        'Mobile Programming' => 'Back End',
+                        'Testing' => 'Testing',
+                    ]),
                 Forms\Components\Textarea::make('description')
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->required(),
+                    ->required()
+                    ->directory('courses'),
                 Forms\Components\TextInput::make('price')
                     ->required()
                     ->numeric()
-                    ->prefix('$'),
-                Forms\Components\TextInput::make('rating')
+                    ->prefix('Rp'),
+                Forms\Components\Select::make('rating')
                     ->required()
-                    ->numeric(),
+                    ->options([
+                        '1' => '1',
+                        '2' => '2',
+                        '3' => '3',
+                        '4' => '4',
+                        '5' => '5',
+                    ]),
             ]);
     }
 
@@ -53,7 +66,9 @@ class CourseResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('category')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                    ->width(200)
+                    ->height(130),
                 Tables\Columns\TextColumn::make('price')
                     ->money()
                     ->sortable(),

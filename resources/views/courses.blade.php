@@ -43,7 +43,7 @@
                             <div class="properties properties2 mb-30">
                                 <div class="properties__card">
                                     <div class="properties__img overlay1">
-                                        <a href="#"><img src="{{ asset($course->image) }}" alt="Course Image"></a>
+                                        <img src="{{ asset('storage/' . $course->image) }}" alt="Course Image">
                                     </div>
                                     <div class="properties__caption">
                                         <p>{{ $course->category }}</p>

@@ -11,7 +11,7 @@ class CertificateController extends Controller
     public function show()
     {
     // Ambil pengguna yang terautentikasi dan sertifikat terkait
-    $user = auth()->user();
+    $user = auth::user();
     $certificates = $user->certificates;  // Mengambil sertifikat terkait pengguna
         
         // Return view with certificates data

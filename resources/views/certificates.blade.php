@@ -36,9 +36,10 @@
                             <div class="properties__card">
                                 <div class="properties__img overlay1">
                                     <!-- Pemanggilan gambar sertifikat -->
-                                    <a href="{{ asset('certificates/' . $certificate->file) }}" download>
-                                        <img src="{{ asset($certificate->file) }}" alt="Certificate" class="certificate-img">
+                                    <a href="{{ asset('storage/' . $certificate->file) }}" download>
+                                        <img src="{{ asset('storage/' . $certificate->file) }}" alt="Certificate" class="certificate-img">
                                     </a>
+                                    
                                 </div>                                
                                 <div class="properties__caption">
                                     <h3>{{ $certificate->title }}</h3>
@@ -46,7 +47,7 @@
                                     <p>Peserta: {{ $certificate->user->name }}</p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                 </div>
-                                    <a href="{{ asset('certificates/' . $certificate->file) }}" class="border-btn border-btn2" download>Download</a>
+                                    <a href="{{ asset('storage/' . $certificate->file) }}" class="border-btn border-btn2" download>Download</a>
                                 </div>
                             </div>
                         </div>
