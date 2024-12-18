@@ -63,9 +63,9 @@
                                                     @endfor
                                                 </div>
                                             </div>
-                                            <div class="price">
-                                                <span>${{ $course->price }}</span>
-                                            </div>
+                                            {{-- <div class="price">
+                                                <span>Rp.{{ number_format($course->price, 0, ',', '.') }}</span>
+                                            </div> --}}
                                         </div>
                                         <!-- Link menuju halaman enroll dengan passing course_id -->
                                         <a href="{{ route('enrollment.create', ['course_id' => $course->id]) }}" class="border-btn border-btn2">Daftar</a>

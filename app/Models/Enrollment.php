@@ -14,4 +14,5 @@ class Enrollment extends Model
     protected $table = 'enrollments';
     protected $fillable = ['name','email','contact','paket','course_id'];
 
+    
 }

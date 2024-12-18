@@ -1,32 +1,38 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
 
-    public function authenticate(Request $request){
-        {
-            $credentials = $request->validate([
-                'email' => 'required]email',
-                'password' => 'required|min:8',
-            ]);
+    public function update(Request $request)
+    {
 
-            if(auth::attempt($credentials)){
-                $request->session()->regenerate();
-                return redirect()->intended('/home');
-            }
-
-            return back()->with('loginError', 'Login gagal!');
+        $user = auth()->user();
+    
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users,email,' . $user->id,
+            'new_password' => 'nullable|min:8',
+        ]);
+    
+        $user->name = $request->name;
+        $user->email = $request->email;
+    
+        if ($request->filled('new_password')) {
+            $user->password = Hash::make($request->new_password);
         }
+
+        $user->save();
+    
+        return redirect('profile')->with('success', 'Profile updated successfully!');
     }
+    
 
     // Fungsi untuk logout pengguna
     public function logout(Request $request)

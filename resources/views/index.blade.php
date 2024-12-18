@@ -13,7 +13,7 @@
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">Online course<br> platform</h1>
                                     <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses and certificates online from world-class companies</p>
-                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join Now</a>
+                                    <a href="courses" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -94,11 +94,11 @@
                                             <i class="fas fa-star-half"></i>
                                         </div>
                                     </div>
-                                    <div class="price">
-                                        <span>$135</span>
-                                    </div>
+                                    {{-- <div class="price">
+                                        <span>Rp.100.000</span>
+                                    </div> --}}
                                 </div>
-                                <a href="courses" class="border-btn border-btn2">Find out more</a>
+                                <a href="courses" class="border-btn border-btn2">Lihat lebih banyak</a>
                             </div>
 
                         </div>
@@ -125,11 +125,11 @@
                                             <i class="fas fa-star-half"></i>
                                         </div>
                                     </div>
-                                    <div class="price">
-                                        <span>$135</span>
-                                    </div>
+                                    {{-- <div class="price">
+                                        <span>Rp.130.000</span>
+                                    </div> --}}
                                 </div>
-                                <a href="courses" class="border-btn border-btn2">Find out more</a>
+                                <a href="courses" class="border-btn border-btn2">Lihat lebih banyak</a>
                             </div>
                         </div>
                     </div>
@@ -156,11 +156,11 @@
                                             <i class="fas fa-star-half"></i>
                                         </div>
                                     </div>
-                                    <div class="price">
-                                        <span>$135</span>
-                                    </div>
+                                    {{-- <div class="price">
+                                        <span>Rp.150.000</span>
+                                    </div> --}}
                                 </div>
-                                <a href="courses" class="border-btn border-btn2">Find out more</a>
+                                <a href="courses" class="border-btn border-btn2">Lihat lebih banyak</a>
                             </div>
 
                         </div>

@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PelatihanController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\CertificateController;
 
@@ -28,15 +29,14 @@ use App\Http\Controllers\CertificateController;
     });
 
     //rute courses
-    Route::get('/courses', function () {
-        return view('courses');
-    })->middleware('auth');
     
     Route::get('/courses', [CourseController::class, 'index'])->name('courses')->middleware('auth');
     
     Route::get('/enrollment/{course_id}', [EnrollmentController::class, 'create'])->name('enrollment.create');
     
     Route::post('/enrollment', [EnrollmentController::class, 'store'])->name('enrollment.store');
+    
+    // Route::get('/pelatihan', [EnrollmentController::class, 'index'])->name('pelatihan')->middleware('auth');
 
     //rute about
     Route::get('/about', function () {
@@ -58,8 +58,4 @@ use App\Http\Controllers\CertificateController;
     Route::post('/logout', [UserController::class, 'logout'])->name('user.logout')->middleware('auth');
 
 
-    // Route::middleware(['admin.only'])->group(function () {
-    //     Route::get('/admin', [FilamentController::class, 'index']);
-    //     // Tambahkan rute lain yang memerlukan akses admin
-    // });
     

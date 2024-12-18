@@ -13,4 +13,11 @@ class User extends Authenticatable
     {
         return $this->hasMany(Certificate::class, 'user_id'); // Pastikan 'user_id' adalah foreign key di tabel certificates
     }
+
+    public function courses()
+{
+    return $this->belongsToMany(Course::class);
+}
+
+    
 }

@@ -1,46 +1,48 @@
 @extends('master')
 
-@section('header')
-    <header>
-        <!-- Header Start -->
-        <div class="header-area header-transparent">
-            <div class="main-header ">
-                <div class="header-bottom header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2 py-4">
-                                <div class="logo">
-                                    <a href="/home"><img src="assets/img/logo/distylogo.png" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
+@php
+    $hideHeader = true;
+@endphp
+
+<header>
+    <!-- Header Start -->
+    <div class="header-area header-transparent">
+        <div class="main-header ">
+            <div class="header-bottom header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center mt-4">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="/"><img src="{{ asset('/assets/img/logo/distylogo.png') }}" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">                                                                                          
+                                                <li class="button-header margin-left"><a href="register" class="btn">Join</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                            <div class="col-xl-10 col-lg-10 py-4">
-                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">                                                                                          
-                                                <!-- Button -->
-                                                <li class="button-header margin-left"><a href="register" class="btn">Join</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div> 
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12 text-center">
+                            <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
                     </div>
-                </div>                
-            </div>
+                </div>
+            </div>                
         </div>
-        <!-- Header End -->
-    </header>
-@endsection
+    </div>
+    <!-- Header End -->
+</header>
 
 @section('konten')
 <main>
-    {{-- autentikasi --}}
-
-
     <section class="slider-area">
         <div class="slider-active">
             <!-- Single Slider -->
@@ -57,7 +59,7 @@
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="card py-5 px-5" style="border: 3px solid #ddd; border-radius: 8px; ">
                                 <form action="{{ route('login.store') }}" method="POST" enctype="multipart/form-data">
-                                    @csrf <!-- Tambahkan CSRF token untuk keamanan -->
+                                    @csrf 
                                     @if(session()->has('success'))
                                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                                         {{ session('success') }}

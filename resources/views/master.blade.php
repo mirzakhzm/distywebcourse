@@ -39,6 +39,7 @@
         </div>
     </div>
     <!-- Preloader Start -->
+    @if (!isset($hideHeader) || !$hideHeader)
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -57,22 +58,32 @@
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
-                                            <ul id="navigation">                                                                                          
+                                            <ul id="navigation">
                                                 <li><a href="/courses">Courses</a></li>
                                                 <li><a href="/about">About</a></li>
                                                 <li><a href="/contact">Contact</a></li>
                                                 <li><a href="/certificates">Certificate</a></li>
+                                        
                                                 @auth
-                                                <li>
-                                                    <form action="{{ route('user.logout') }}" method="POST" class="d-inline-block">
-                                                        @csrf
-                                                            <button type="submit" class="btn btn-danger">Logout</button>
-                                                    </form>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-bottom: 10px">
+                                                        Welcome {{ Auth::user()->name }}
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item text-dark" href="/profile" style="padding: 20px">Profile</a></li>
+                                                        {{-- <li><a class="dropdown-item text-dark" href="/pelatihan" style="padding: 15px">Pelatihan Saya</a></li> --}}
+                                                        <li class="pb-3 pt-4">
+                                                            <form action="{{ route('user.logout') }}" method="POST" class="d-inline-block">
+                                                                @csrf
+                                                                <button type="submit" class=" dropdown-item btn btn-link ">Logout</button>
+                                                            </form>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 @else
-                                                 <!-- Tampilkan tombol ini jika user belum login -->
-                                                    <li class="button-header margin-left"><a href="/register" class="btn">Join</a></li>
-                                                    <li class="button-header"><a href="/welcome" class="btn btn3">Login</a></li>
+                                                <!-- Tampilkan tombol jika user belum login -->
+                                                <li class="button-header margin-left"><a href="/register" class="btn">Join</a></li>
+                                                <li class="button-header"><a href="/welcome" class="btn btn3">Login</a></li>
                                                 @endauth
                                             </ul>
                                         </nav>
@@ -90,6 +101,7 @@
         </div>
         <!-- Header End -->
     </header>
+    @endif
 
     @yield('konten')
 
