@@ -37,7 +37,7 @@ class CertificateResource extends Resource
                 )
                 ->required(),
                 Forms\Components\FileUpload::make('file')
-                    ->image()
+                    // ->image()
                     ->required()
                     ->preserveFilenames()
                     ->directory('certificates'),

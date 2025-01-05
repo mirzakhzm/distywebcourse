@@ -28,10 +28,23 @@
             </div>
         </section>
 
+        <!-- Card Nama dan Nomor Rekening -->
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pembayaran ke Rekening</h5>
+                    <p class="card-text">
+                        <strong>Nama:</strong> John Doe<br>
+                        <strong>No Rekening:</strong> 1234567890 (Bank ABC)
+                    </p>
+                </div>
+            </div>
+        </div>
+
         {{--enrollment form --}}
         <div class="row justify-content-center" style="padding-top:8%; padding-bottom:12%;">
             <div class="col-lg-8">
-                <form action="{{ route('enrollment.store') }}" method="POST">
+                <form action="{{ route('enrollment.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <!-- Name Input -->
@@ -61,6 +74,13 @@
                                     <option value="pelatihan_offline">Pelathan Offline(Rp 250.000)</option>
                                     <option value="pelatihan_sertifikasi">Pelatihan & Sertifikasi (Rp1.700.000)</option>
                                 </select>
+                            </div>
+                        </div>
+                        <!-- Bukti Pembayaran Input -->
+                        <div class="col-12 mt-3">
+                            <div class="form-group">
+                                <label for="payment_proof">Upload Bukti Pembayaran:</label>
+                                <input class="form-control-file" type="file" name="payment_proof" id="payment_proof" required>
                             </div>
                         </div>
                         <!-- Hidden Course ID Input -->

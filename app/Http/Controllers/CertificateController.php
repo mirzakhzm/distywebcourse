@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Enrollment;
 use App\Models\Certificate;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -41,5 +43,15 @@ class CertificateController extends Controller
         return redirect()->back()->with('error', 'Certificate file not found.');
     }
     
-    
+    public function generateCertificate($id)
+    {
+        $enrollment = Enrollment::findOrFail($id);
+
+        // Generate PDF
+        $pdf = Pdf::loadView('certificates.template', ['enrollment' => $enrollment]);
+
+        // Unduh file PDF
+        $fileName = 'Certificate_' . $enrollment->name . '.pdf';
+        return $pdf->download($fileName);
+    }
 }
