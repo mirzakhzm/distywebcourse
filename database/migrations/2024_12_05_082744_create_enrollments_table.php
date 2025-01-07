@@ -15,6 +15,7 @@ class CreateEnrollmentsTable extends Migration
             $table->string('contact');
             $table->string('paket');
             $table->unsignedBigInteger('course_id');
+            $table->string('payment_proof')->nullable(); // Kolom untuk bukti pembayaran
             $table->timestamps();
 
             $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');

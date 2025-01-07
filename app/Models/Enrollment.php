@@ -1,7 +1,5 @@
 <?php
 
-// app/Models/Enrollment.php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -12,7 +10,7 @@ class Enrollment extends Model
     use HasFactory;
 
     protected $table = 'enrollments';
-    protected $fillable = ['name','email','contact','paket','course_id'];
+    protected $fillable = ['name','email','contact','paket','course_id', 'payment_proof',];
 
     
 }

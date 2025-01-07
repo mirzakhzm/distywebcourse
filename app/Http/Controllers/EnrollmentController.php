@@ -1,7 +1,5 @@
 <?php
 
-// app/Http/Controllers/EnrollmentController.php
-
 namespace App\Http\Controllers;
 
 use App\Models\Course;
@@ -23,14 +21,22 @@ class EnrollmentController extends Controller
     // Menyimpan data enrollment
     public function store(Request $request)
     {
-        // Validasi input
+        // Validasi data
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email',
-            'contact' => 'required|string',
+            'email' => 'required|email|max:255',
+            'contact' => 'required|numeric',
             'paket' => 'required|string',
             'course_id' => 'required|exists:courses,id',
+            'payment_proof' => 'required|file|mimes:jpeg,png,jpg,pdf|max:2048', // Validasi untuk file bukti pembayaran
         ]);
+
+        // Upload bukti pembayaran
+        if ($request->hasFile('payment_proof')) {
+            $file = $request->file('payment_proof');
+            $filePath = $file->store('payment_proofs', 'public'); // Simpan di storage/public/payment_proofs
+            $validated['payment_proof'] = $filePath;
+        }
     
         // Simpan data pendaftaran ke database
         Enrollment::create($validated);    

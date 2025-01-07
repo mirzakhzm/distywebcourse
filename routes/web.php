@@ -10,6 +10,7 @@ use App\Http\Controllers\PelatihanController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\CertificateController;
 
+
     Route::get('/', function () {
         return view('index');
     });
@@ -58,4 +59,5 @@ use App\Http\Controllers\CertificateController;
     Route::post('/logout', [UserController::class, 'logout'])->name('user.logout')->middleware('auth');
 
 
-    
+    Route::get('/enrollments/{id}/generate-certificate', [CertificateController::class, 'generateCertificate'])
+    ->name('enrollments.generateCertificate');
