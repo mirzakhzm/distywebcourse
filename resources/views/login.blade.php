@@ -59,14 +59,7 @@
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="card py-5 px-5" style="border: 3px solid #ddd; border-radius: 8px; ">
                                 <form action="{{ route('login.store') }}" method="POST" enctype="multipart/form-data">
-                                    @csrf 
-                                    @if(session()->has('success'))
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                        {{ session('success') }}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                    </div>
-                                    @endif
-                            
+                                    @csrf                             
                                     @if(session()->has('loginError'))
                                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                         {{ session('loginError') }}

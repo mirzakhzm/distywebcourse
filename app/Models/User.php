@@ -15,9 +15,12 @@ class User extends Authenticatable
     }
 
     public function courses()
-{
-    return $this->belongsToMany(Course::class);
-}
+    {
+        return $this->belongsToMany(Course::class);
+    }
 
-    
+    public function enrollments()
+    {
+        return $this->hasMany(Enrollment::class, 'user_id');  // Relasi satu ke banyak dengan Enrollment
+    }
 }

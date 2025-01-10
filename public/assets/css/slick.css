@@ -117,3 +117,58 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* Styling for slider arrows */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #dca73a;
+}
+
+/* Positioning arrows */
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+/* Styling arrow icons */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'slick'; /* Ensure you're using the Slick font */
+    opacity: 1; /* Ensure icons are visible */
+    color: #fff; /* Default color for icons */
+}
+
+/* Customization for hover state */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #dca73a; /* Change color when hovered */
+}
+
+/* To ensure the arrows are not hidden */
+.slick-arrow {
+    display: block !important;
+}

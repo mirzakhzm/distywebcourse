@@ -11,12 +11,12 @@
                         <div class="row">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption hero__caption2">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">Enrollment courses</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">Pembayaran</h1>
                                     <!-- breadcrumb Start-->
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a>Home</a></li>
-                                            <li class="breadcrumb-item"><a> Enrollment Courses</a></li> 
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Pembayaran</a></li> 
                                         </ol>
                                     </nav>
                                     <!-- breadcrumb End -->
@@ -27,49 +27,39 @@
                 </div>
             </div>
         </section>
-
-        {{--enrollment form --}}
         <div class="row justify-content-center" style="padding-top:8%; padding-bottom:12%;">
             <div class="col-lg-8">
-                <form action="{{ route('enrollment.store') }}" method="POST">
+                <form action="{{ route('pembayaran.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <!-- Name Input -->
                         <div class="col-sm-6 mt-3">
                             <div class="form-group">
-                                <input class="form-control" name="name" type="text" placeholder="Enter your name" required style="font-size: 14px; padding: 20px; width: 100%;">
+                                <input class="form-control" name="name" id="name" value="{{ $name }}" readonly style="font-size: 14px; padding: 20px;">
                             </div>
                         </div>
                         <!-- Email Input -->
                         <div class="col-sm-6 mt-3">
                             <div class="form-group">
-                                <input class="form-control" name="email" type="email" placeholder="Enter your email" required style="font-size: 14px; padding: 20px; width: 100%;">
+                                <input class="form-control" name="email" id="email" value="{{ $email }}" readonly style="font-size: 14px; padding: 20px;">
                             </div>
                         </div>
-                        <!-- Contact Input -->
-                        <div class="col-sm-12 mt-3">
+                        <div class="col-sm-6 mt-3">
                             <div class="form-group">
-                                <input class="form-control" name="contact" type="number" placeholder="Enter your contact" required style="font-size: 14px; padding: 20px; width: 100%;">
-                            </div>
-                        </div>      
-                        <!-- Pilihan Input -->
-                        <div class="col-12 mt-3">
-                            <div class="form-group">
-                                <select class="form-control" name="paket" id="paket">
-                                    <option value="" disabled selected>Pilihan Paket</option>
-                                    <option value="pelatihan_online">Pelatihan Online(Rp 100.000)</option>
-                                    <option value="pelatihan_offline">Pelathan Offline(Rp 250.000)</option>
-                                    <option value="pelatihan_sertifikasi">Pelatihan & Sertifikasi (Rp1.700.000)</option>
-                                </select>
+                                <input class="form-control" name="contact" id="contact" value="{{ $contact }}" readonly style="font-size: 14px; padding: 20px;">
                             </div>
                         </div>
-                        <!-- Hidden Course ID Input -->
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-3">
                             <div class="form-group">
-                                <input type="hidden" name="course_id" value="{{ $course->id }}">
+                                <input class="form-control" name="contact" id="paket" value="{{ $paket }}" readonly style="font-size: 14px; padding: 20px;">
                             </div>
                         </div>
-                    </div>
+                        <div class="col-sm-6 mt-3">
+                            <div class="form-group">
+                                <input class="form-control" name="image" type="file" id="bukti_pembayaran" accept="image/*" required style="font-size: 12px; padding:15px; padding-bottom: 40px;">
+                            </div>
+                        </div>
+                    </div>      
                     <!-- Submit Button -->
                     <div class="form-group mt-3">
                         <button type="submit" class="button button-contactForm boxed-btn" style="font-size: 18px; padding: 10px 25px; width: 100%;">Send</button>

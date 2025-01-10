@@ -71,6 +71,7 @@ class CourseResource extends Resource
                     ->height(130),
                 Tables\Columns\TextColumn::make('price')
                     ->money()
+                    ->formatStateUsing(fn ($state) => 'Rp. ' . number_format($state, 0, ',', '.'))
                     ->sortable(),
                 Tables\Columns\TextColumn::make('rating')
                     ->numeric()

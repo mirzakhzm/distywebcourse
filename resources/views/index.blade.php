@@ -156,9 +156,6 @@
                                             <i class="fas fa-star-half"></i>
                                         </div>
                                     </div>
-                                    {{-- <div class="price">
-                                        <span>Rp.150.000</span>
-                                    </div> --}}
                                 </div>
                                 <a href="courses" class="border-btn border-btn2">Lihat lebih banyak</a>
                             </div>
@@ -189,7 +186,7 @@
                                 toward your personal
                                 and professional goals
                             with us.</h2>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+                            <a href="courses" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Courses</a>
                         </div>
                     </div>
                 </div>

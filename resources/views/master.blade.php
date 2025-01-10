@@ -71,7 +71,7 @@
                                                     </a>
                                                     <ul class="dropdown-menu">
                                                         <li><a class="dropdown-item text-dark" href="/profile" style="padding: 20px">Profile</a></li>
-                                                        {{-- <li><a class="dropdown-item text-dark" href="/pelatihan" style="padding: 15px">Pelatihan Saya</a></li> --}}
+                                                        <li><a class="dropdown-item text-dark" href="pelatihan" style="padding: 15px">Pelatihan Saya</a></li>
                                                         <li class="pb-3 pt-4">
                                                             <form action="{{ route('user.logout') }}" method="POST" class="d-inline-block">
                                                                 @csrf
@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>Building competent & competitive human resources.</p>
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -137,13 +137,10 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Our courses</h4>
+                                <h4>Company</h4>
                                 <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="courses">Courses</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -167,13 +164,10 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Contact</h4>
+                                <h4>Get in touch</h4>
                                 <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="#">Our Location</a></li>
                                 </ul>
                             </div>
                         </div>

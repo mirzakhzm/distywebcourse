@@ -1,34 +1,48 @@
-<!-- resources/views/pelatihan.blade.php -->
-@extends('layouts.app')
+@extends('master')
 
-@section('content')
-<div class="enrollment-area section-padding40 fix">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3>Enrollment Data</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nama</th>
-                            <th>Kontak</th>
-                            <th>Pilihan Paket</th>
-                            <th>Course ID</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($enrollments as $enrollment)
-                        <tr>
-                            <td>{{ $enrollment->name }}</td>
-                            <td>{{ $enrollment->contact }}</td>
-                            <td>{{ $enrollment->paket }}</td>
-                            <td>{{ $enrollment->course_id }}</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+@section('konten')
+<main>
+    <div class="courses-area section-padding40 fix mt-5">
+        <div class="container">
+            <div class="row">
+                @if($message)
+                    <div class="alert alert-warning">
+                        {{ $message }}
+                    </div>
+                @endif
+                    <!-- Menampilkan data enrollments jika ada -->
+                    @foreach($enrollments as $enrollment)
+                        <div class="col-lg-4">
+                            <div class="properties properties2 mb-30">
+                                <div class="properties__card">
+                                    <div class="properties__img overlay1">
+                                        <img src="{{ asset('storage/' . $enrollment->course->image) }}" alt="Course Image">
+                                    </div>
+                                    <div class="properties__caption">
+                                        <p>{{ $enrollment->course->category }}</p>
+                                        <h3><a href="#">{{ $enrollment->course->title }}</a></h3>
+                                        <p>{{ $enrollment->course->description }}</p>
+                                        <div class="properties__footer d-flex justify-content-between align-items-center">
+                                            <div class="restaurant-name">
+                                                <div class="rating">
+                                                    @for ($i = 1; $i <= 5; $i++)
+                                                        @if ($i <= floor($enrollment->course->rating)) 
+                                                            <i class="fas fa-star"></i> <!-- Bintang penuh -->
+                                                        @elseif ($i == ceil($enrollment->course->rating) && $enrollment->course->rating - floor($enrollment->course->rating) >= 0.5)
+                                                            <i class="fas fa-star-half"></i> <!-- Setengah bintang -->
+                                                        @else
+                                                            <i class="far fa-star"></i> <!-- Bintang kosong -->
+                                                        @endif
+                                                    @endfor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
             </div>
         </div>
     </div>
-</div>
-@endsection
+</main>

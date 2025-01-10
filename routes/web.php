@@ -9,6 +9,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PelatihanController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\PembayaranController;
 
     Route::get('/', function () {
         return view('index');
@@ -32,21 +33,30 @@ use App\Http\Controllers\CertificateController;
     
     Route::get('/courses', [CourseController::class, 'index'])->name('courses')->middleware('auth');
     
+    //rute enroll
+    
     Route::get('/enrollment/{course_id}', [EnrollmentController::class, 'create'])->name('enrollment.create');
     
     Route::post('/enrollment', [EnrollmentController::class, 'store'])->name('enrollment.store');
     
-    // Route::get('/pelatihan', [EnrollmentController::class, 'index'])->name('pelatihan')->middleware('auth');
+    Route::get('/pelatihan', [EnrollmentController::class, 'index'])->middleware('auth');
 
+    // Menampilkan form pembayaran
+    Route::get('/pembayaran', [PembayaranController::class, 'showForm'])->middleware('auth');
+
+    // Menyimpan bukti pembayaran
+    Route::post('/pembayaran', [PembayaranController::class, 'store'])->name('pembayaran.store')->middleware('auth');
+
+   
     //rute about
     Route::get('/about', function () {
         return view('about');
-    })->middleware('auth');
+    });
 
     //rute contact
     Route::get('/contact', function () {
         return view('contact');
-    })->middleware('auth');
+    });
 
     Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 

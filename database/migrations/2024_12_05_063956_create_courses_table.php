@@ -13,7 +13,6 @@ return new class extends Migration
             $table->string('title');
             $table->string('category');
             $table->text('description');
-            $table->text('skill');
             $table->string('image');
             $table->decimal('price', 8, 2);
             $table->integer('rating');
