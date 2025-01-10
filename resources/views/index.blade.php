@@ -13,6 +13,9 @@
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay="0.2s">Online course<br> platform</h1>
                                     <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses and certificates online from world-class companies</p>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">
+                                        Building competent & competitive human resources
+                                    </p>                                    
                                     <a href="courses" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join Now</a>
                                 </div>
                             </div>
@@ -58,6 +61,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon4.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Certified Trainers</h3>
+                                <p>All our instructors are certified as professional trainers by BNSP RI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon5.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Modern Facilities</h3>
+                                <p>We provide a conducive learning environment equipped with modern facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -67,7 +93,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>Our featured courses</h2>
+                            <h2>Program Pelatihan Kami</h2>
                         </div>
                     </div>
                 </div>
@@ -79,10 +105,13 @@
                                 <a href="#"><img src="assets/img/gallery/featured1.png" alt=""></a>
                             </div>
                             <div class="properties__caption">
-                                <p>User Experience</p>
-                                <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                <p>The automated process handles all your website tasks efficiently.
-
+                                <p>Program Pelatihan</p>
+                                <h3><a href="#">Digital Marketing</a></h3>
+                                <p>Pelatihan digital marketing yang up to date adalah program
+                                    yang dirancang untuk membekali peserta dengan
+                                    pengetahuan terbaru dan keterampilan praktis yang
+                                    diperlukan dalam ranah pemasaran digital yang terus
+                                    berkembang.
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
                                     <div class="restaurant-name">
@@ -111,9 +140,11 @@
                                 <a href="#"><img src="assets/img/gallery/featured2.png" alt=""></a>
                             </div>
                             <div class="properties__caption">
-                                <p>User Experience</p>
-                                <h3><a href="#">Advanced Laravel Techniques</a></h3>
-                                <p>Deep dive into advanced concepts and optimization in Laravel.
+                                <p>Program Pelatihan</p>
+                                <h3><a href="#">Desain Grafis</a></h3>
+                                <p>Pelatihan desain grafis adalah program pendidikan yang
+                                    ditujukan untuk memperkenalkan peserta pada konsepkonsep dasar dan teknik-teknik terkini dalam dunia desain
+                                    visual. 
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
                                     <div class="restaurant-name">
@@ -141,10 +172,12 @@
                                 <a href="#"><img src="assets/img/gallery/featured3.png" alt=""></a>
                             </div>
                             <div class="properties__caption">
-                                <p>User Experience</p>
-                                <h3><a href="#">Frontend Development Mastery</a></h3>
-                                <p>Master HTML, CSS, JavaScript for modern web designs.
-
+                                <p>Program Pelatihan</p>
+                                <h3><a href="#">Operator Komputer</a></h3>
+                                <p>Pelatihan operator komputer adalah program yang dirancang
+                                    untuk membekali peserta dengan keterampilan dasar dalam
+                                    menggunakan komputer dan aplikasi produktivitas seperti
+                                    pengolah kata, spreadsheet, dan presentasi.
                                 </p>
                                 <div class="properties__footer d-flex justify-content-between align-items-center">
                                     <div class="restaurant-name">
@@ -173,7 +206,7 @@
         
 
         <!--? About Area-2 Start -->
-        <section class="about-area2 fix pb-padding" style="padding-top: 100px; padding-bottom: 100px;">
+        {{-- <section class="about-area2 fix pb-padding" style="padding-top: 100px; padding-bottom: 100px;">
             <div class="support-wrapper align-items-center">
                 <div class="right-content2">
                     <!-- img -->
@@ -194,7 +227,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- About Area End -->
     </main>
 @endsection

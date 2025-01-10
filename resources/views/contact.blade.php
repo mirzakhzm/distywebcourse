@@ -62,21 +62,23 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>Surabaya, Jawa Timur.</h3>
-                                <p>Ahmad Yani, Surabaya</p>
+                                <h3>Gedung Graha Pena Lt. 5 Jl. Ahmad
+                                    Yani No. 88</h3>
+                                <p>Surabaya, Jawa Timur</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+123 872 192 0</h3>
+                                <h3>085-731-785-411</h3>
                                 <p>Mon to Fri 8am to 4pm</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>distyacademy@gmail.com</h3>
+                                <h3>info@distyindonesia.com
+                                </h3>
                                 <p>Send us your question anytime!</p>
                             </div>
                         </div>

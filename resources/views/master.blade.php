@@ -24,6 +24,26 @@
     <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     
+    <style>.card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card:hover {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        max-height: 250px;
+        object-fit: cover;
+    }
+    </style>
+    
 </head>
 
 <body>
@@ -106,101 +126,41 @@
     @yield('konten')
 
     <footer>
-     <div class="footer-wrappper footer-bg">
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding">
+        <div class="footer-wrapper footer-bg">
+          <!-- Footer Content -->
+          <div class="footer-area py-4">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo mb-25">
-                                    <img src="{{ asset('/assets/img/logo/distylogo.png') }}" class="img-fluid" style="max-width: 230px;" alt="Logo">
-                                    
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
-                                    </div>
-                                </div>
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Our courses</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>About</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Contact</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+              <div class="d-flex flex-column align-items-center text-center">
+                <!-- Logo -->
+                <div class="footer-logo mb-2">
+                  <img src="{{ asset('/assets/img/logo/distylogo.png') }}" class="img-fluid" style="max-width: 180px;" alt="Logo">
                 </div>
-            </div>
-        </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right text-center">
-                                <p>
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved made by Kelompok 7</a>
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                <!-- Description -->
+                <p class="text-light mb-2" style="font-size: 14px;">
+                  The automated process starts as soon as your clothes go into the machine.
+                </p>
+                <!-- Social Media -->
+                <div class="footer-social">
+                  <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                  <a href="https://bit.ly/sai4ull" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-light"><i class="fab fa-pinterest-p"></i></a>
+                </div>
               </div>
+            </div>
           </div>
-          <!-- Footer End-->
-      </div>
-  </footer> 
-  
+          <!-- Footer Bottom -->
+          <div class="footer-bottom-area py-2">
+            <div class="container">
+              <div class="text-center">
+                <p class="text-light mb-0" style="font-size: 12px;">
+                  &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. Made by Kelompok 7.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
   <!-- Scroll Up -->
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>

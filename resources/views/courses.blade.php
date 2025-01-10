@@ -78,8 +78,6 @@
                 
             </div>
         </div>
-        
-        
         <!-- Courses area End -->
 
     </main>
