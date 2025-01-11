@@ -29,6 +29,17 @@
         </section>
         <div class="row justify-content-center" style="padding-top:8%; padding-bottom:12%;">
             <div class="col-lg-8">
+                <div class="container mt-3 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pembayaran ke Rekening</h5>
+                            <p class="card-text">
+                                <strong>Nama :</strong> Disty Academy<br>
+                                <strong>No Rekening :</strong> 1234567890 (Bank Jago)
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <form action="{{ route('pembayaran.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">

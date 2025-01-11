@@ -67,33 +67,19 @@
                 </div>
             </div>
         </div>
-        <!--? About Area-1 Start -->
-        <section class="about-area1 fix" style="padding-bottom: 100px; padding-top: 100px;" >
+
+                <!--? About Area-1 Start -->
+        <section class="about-area1 fix" style="margin-bottom: 7%; margin-top: 2%;" >
             <div class="support-wrapper align-items-center">
                 <div class="left-content1">
                     <div class="about-icon">
                         <img src="assets/img/icon/about.svg" alt="">
                     </div>
-                    <!-- Bagian Judul -->
-                    <div class="section-tittle section-tittle2 mb-55">
-                        <div class="front-text">
-                            <h2 class="">Disty Academy</h2>
-                            <p>Disty Academy adalah lembaga pelatihan kerja yang
-                                didedikasikan untuk memberikan pembekalan
-                                keterampilan, pengetahuan dan sikap kerja yang
-                                diperlukan untuk berhasil di dunia kerja sesuai dengan
-                                Standar Kompetensi Kerja Nasional Indonesia (SKKNI).
-                                Dengan berbagai program pelatihan yang disesuaikan
-                                dengan kebutuhan industri dan dunia kerja, kami
-                                bertujuan untuk membantu individu mewujudkan potensi
-                                terbaik mereka.</p>
-                        </div>
-                    </div>
 
                     {{-- Bagian Visi --}}
                     <div class="single-features">
                         <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <p>Visi</p>
@@ -101,10 +87,7 @@
                     </div>
                     
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Menjadi Lembaga pelatihan nasional yang terbaik, 
                             terkemuka dan terpercaya dalam memberikan menyelenggarakan pendidikan 
                             dan pelatihan berbasis kompetensi sesuai dengan Standar Kompetensi Kerja
@@ -115,7 +98,7 @@
                     {{-- Bagian Misi --}}
                     <div class="single-features">
                         <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
+                            <img src="assets/img/icon/circle-fill.svg" alt="">
                         </div>
                         <div class="features-caption">
                             <p>Misi</p>
@@ -123,28 +106,19 @@
                     </div>
 
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Mendukung pengembangan sumberdaya manusia yang unggul dan berdaya saing</p>
                         </div>
                     </div>
 
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Melaksanakan pendidikan dan pelatihan berbasis kompetensi sesuai dengan SKKNI</p>
                         </div>
                     </div>
                     
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Menyelenggarakan pelatihan sesuai dengan kebutuhan pelanggan 
                                 serta mengikuti perkembangan zaman, agar dapat
                                 mendukung pertumbuhan dan pengembangan bisnis perusahaan 
@@ -153,10 +127,7 @@
                     </div>
                     
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Menyediakan fasilitas dan lingkungan belajar 
                                 yang kondusif untuk pertumbuhan dan perkembangan 
                                 individu</p>
@@ -164,20 +135,14 @@
                     </div>
                     
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Memberikan pelayanan terbaik 
                             yang mengutamakan kepuasan pelanggan</p>
                         </div>
                     </div>
                     
                     <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/circle-fill.svg" alt="">
-                        </div>
-                        <div class="features-caption">
+                        <div class="text-justify">
                             <p>Memfasilitasi sertifikasi kompetensi Badan Nasional Sertifikasi Profesi (BNSP) Republik Indonesia</p>
                         </div>
                     </div>
@@ -199,52 +164,70 @@
         </section>
         <!-- About Area End -->
 
-        <!--? About Area-3 Start -->
-        <section class="about-area3 fix">
-            <div class="support-wrapper align-items-center">
-                <div class="right-content3">
-                    <!-- img -->
-                    <div class="right-img">
-                        <img src="assets/img/gallery/about3.png" alt="">
+        <!-- Management Section -->
+        <section class="management-area section-padding40">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2>Manajemen Kami</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="left-content3">
-                    <!-- section tittle -->
-                    <div class="section-tittle section-tittle2 mb-20">
-                        <div class="front-text">
-                            <h2 class="">Keunggulan Kami</h2>
+                <div class="row">
+                    <!-- Single Team Member Card -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-center shadow">
+                            <img class="card-img-top" src="assets/img/management/management(1).png" alt="Chandra S. Anugrah" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Chandra S. Anugrah, M.Kom.</h5>
+                                <p class="card-text">Komisaris</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <p>Instruktur Berpengalaman & Tersertifikasi BNSP RI</p>
-                        </div>
-                    </div>
-                    <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <p>Fasilitas Modern</p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-center shadow">
+                            <img class="card-img-top" src="assets/img/management/management(2).png" alt="Wiwit Denny Fitriana" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Wiwit Denny Fitriana, M.Si.</h5>
+                                <p class="card-text">Direktur</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <p>Kerjasama Industri Nasional</p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-center shadow">
+                            <img class="card-img-top" src="assets/img/management/management(3).png" alt="Galuh Tisna Widiana" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Galuh Tisna Widiana, M.Pd.</h5>
+                                <p class="card-text">Manajer Pelatihan</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="single-features">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/right-icon.svg" alt="">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-center shadow">
+                            <img class="card-img-top" src="assets/img/management/management(4).png" alt="Dr. Nur Ulwiyah" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Dr. Nur Ulwiyah, M.Pd.</h5>
+                                <p class="card-text">Manajer Mutu</p>
+                            </div>
                         </div>
-                        <div class="features-caption">
-                            <p>Bersertifikat BNSP Republik Indonesia</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-center shadow">
+                            <img class="card-img-top" src="assets/img/management/management(5).png" alt="Mochamad Samsukadi" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Mochamad Samsukadi, M.Th.I</h5>
+                                <p class="card-text">Manajer Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-center shadow">
+                            <img class="card-img-top" src="assets/img/management/management(6).png" alt="Ely Kristiana" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Ely Kristiana, SE.</h5>
+                                <p class="card-text">Manajer Administrasi & Keuangan</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ class CreateEnrollmentsTable extends Migration
             $table->string('email');
             $table->string('contact');
             $table->string('paket');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->unsignedBigInteger('course_id');
             $table->timestamps();
 

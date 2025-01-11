@@ -41,6 +41,8 @@ class EnrollmentResource extends Resource
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
                     ->image()
+                    ->preserveFilenames()
+                    ->directory('image')
                     ->required(),
                 Forms\Components\Select::make('course_id')
                 ->label('Course')
@@ -66,7 +68,9 @@ class EnrollmentResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('paket')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                ->width(200)
+                ->height(130),
                 Tables\Columns\TextColumn::make('course.title')
                     ->numeric()
                     ->sortable(),

@@ -71,7 +71,7 @@
                                                     </a>
                                                     <ul class="dropdown-menu">
                                                         <li><a class="dropdown-item text-dark" href="/profile" style="padding: 20px">Profile</a></li>
-                                                        <li><a class="dropdown-item text-dark" href="pelatihan" style="padding: 15px">Pelatihan Saya</a></li>
+                                                        <li><a class="dropdown-item text-dark" href="/pelatihan" style="padding: 15px">Pelatihan Saya</a></li>
                                                         <li class="pb-3 pt-4">
                                                             <form action="{{ route('user.logout') }}" method="POST" class="d-inline-block">
                                                                 @csrf
@@ -140,6 +140,7 @@
                                 <h4>Company</h4>
                                 <ul>
                                     <li><a href="about">About</a></li>
+                                    <li><a href="/">Keunggulan Kami</a></li>
                                     <li><a href="courses">Courses</a></li>
                                 </ul>
                             </div>
@@ -151,11 +152,8 @@
                             <div class="footer-tittle">
                                 <h4>About</h4>
                                 <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="about">Management</a></li>
+                                    <li><a href="about">Instruktur</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -164,10 +162,10 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Get in touch</h4>
+                                <h4>Contact Us</h4>
                                 <ul>
                                     <li><a href="contact">Contact</a></li>
-                                    <li><a href="#">Our Location</a></li>
+                                    <li><a href="contact">Our Location</a></li>
                                 </ul>
                             </div>
                         </div>

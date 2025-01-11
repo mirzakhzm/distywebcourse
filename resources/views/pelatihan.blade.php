@@ -1,15 +1,56 @@
 @extends('master')
 
+@php
+    $hideHeader = true;
+@endphp
+
+<header>
+    <!-- Header Start -->
+    <div class="header-area header-transparent">
+        <div class="main-header ">
+            <div class="header-bottom header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center mt-4">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="/"><img src="{{ asset('/assets/img/logo/distylogo.png') }}" class="img-fluid" style="max-width: 180px;" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">                                                                                          
+                                                <li class="button-header margin-left"><a href="/" class="btn">kembali</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12 text-center">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
+
 @section('konten')
 <main>
     <div class="courses-area section-padding40 fix mt-5">
         <div class="container">
             <div class="row">
                 @if($message)
-                    <div class="alert alert-warning">
-                        {{ $message }}
-                    </div>
-                @endif
+                <div class="alert alert-warning" style="text-align: center; padding: 10px; margin: 200px auto; max-width: 600px;">
+                    {{ $message }}
+                </div>
+            @endif
                     <!-- Menampilkan data enrollments jika ada -->
                     @foreach($enrollments as $enrollment)
                         <div class="col-lg-4">

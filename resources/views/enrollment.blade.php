@@ -57,9 +57,9 @@
                             <div class="form-group">
                                 <select class="form-control" name="paket" id="paket">
                                     <option value="" disabled selected>Pilihan Paket</option>
-                                    <option value="pelatihan_online">Pelatihan Online(Rp 100.000)</option>
-                                    <option value="pelatihan_offline">Pelathan Offline(Rp 250.000)</option>
-                                    <option value="pelatihan_sertifikasi">Pelatihan & Sertifikasi (Rp1.700.000)</option>
+                                    <option value="pelatihan_online (Rp 100.000)">Pelatihan Online(Rp 100.000)</option>
+                                    <option value="pelatihan_offline (Rp 250.000)">Pelathan Offline(Rp 250.000)</option>
+                                    <option value="pelatihan_sertifikasi (Rp1.700.000)">Pelatihan & Sertifikasi (Rp1.700.000)</option>
                                 </select>
                             </div>
                         </div>

@@ -94,9 +94,6 @@
                                             <i class="fas fa-star-half"></i>
                                         </div>
                                     </div>
-                                    {{-- <div class="price">
-                                        <span>Rp.100.000</span>
-                                    </div> --}}
                                 </div>
                                 <a href="courses" class="border-btn border-btn2">Lihat lebih banyak</a>
                             </div>
@@ -125,9 +122,6 @@
                                             <i class="fas fa-star-half"></i>
                                         </div>
                                     </div>
-                                    {{-- <div class="price">
-                                        <span>Rp.130.000</span>
-                                    </div> --}}
                                 </div>
                                 <a href="courses" class="border-btn border-btn2">Lihat lebih banyak</a>
                             </div>
@@ -167,7 +161,73 @@
             </div>
         </div>
         <!-- Courses area End -->
+
+        <!-- Bagian Judul -->
+        <div class="section-tittle section-tittle2 mb-5" style="margin-left: 7%; margin-right:7%;">
+            <div class="front-text">
+                <h2 class="">Disty Academy</h2>
+                <p class="text-justify">Disty Academy adalah lembaga pelatihan kerja yang
+                didedikasikan untuk memberikan pembekalan
+                keterampilan, pengetahuan dan sikap kerja yang
+                diperlukan untuk berhasil di dunia kerja sesuai dengan
+                Standar Kompetensi Kerja Nasional Indonesia (SKKNI).
+                Dengan berbagai program pelatihan yang disesuaikan
+                dengan kebutuhan industri dan dunia kerja, kami
+                bertujuan untuk membantu individu mewujudkan potensi
+                terbaik mereka.</p>
+            </div>
+        </div>
         
+        <section class="about-area3 fix">
+            <div class="support-wrapper align-items-center" style="margin-top: 7%; margin-bottom: 7%;">
+                <div class="right-content3">
+                    <!-- img -->
+                    <div class="right-img">
+                        <img src="assets/img/gallery/about3.png" alt="">
+                    </div>
+                </div>
+                <div class="left-content3">
+                    <!-- section tittle -->
+                    <div class="section-tittle section-tittle2 mb-20">
+                        <div class="front-text">
+                            <h2 class="">Keunggulan</h2>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Instruktur Berpengalaman & Tersertifikasi BNSP RI</p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Fasilitas Modern</p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Kerjasama Industri Nasional</p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p>Bersertifikat BNSP Republik Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--? About Area-2 Start -->
         <section class="about-area2 fix pb-padding" style="padding-top: 100px; padding-bottom: 100px;">

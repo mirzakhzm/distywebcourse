@@ -29,8 +29,15 @@ use App\Http\Controllers\PembayaranController;
         return view('welcome');
     });
 
+    //rute profile
+    Route::get('/profile', function () {
+        return view('profile');
+    })->middleware('auth');
+
+    Route::post('/user/update', [UserController::class, 'update'])->name('user.update');
+
+
     //rute courses
-    
     Route::get('/courses', [CourseController::class, 'index'])->name('courses')->middleware('auth');
     
     //rute enroll
@@ -47,7 +54,6 @@ use App\Http\Controllers\PembayaranController;
     // Menyimpan bukti pembayaran
     Route::post('/pembayaran', [PembayaranController::class, 'store'])->name('pembayaran.store')->middleware('auth');
 
-   
     //rute about
     Route::get('/about', function () {
         return view('about');
@@ -66,6 +72,9 @@ use App\Http\Controllers\PembayaranController;
     Route::get('/certificates/{id}/download', [CertificateController::class, 'download'])->name('certificate.download');
     
     Route::post('/logout', [UserController::class, 'logout'])->name('user.logout')->middleware('auth');
-
+    
+    //auto generate
+    Route::get('/enrollments/{id}/generate-certificate', [CertificateController::class, 'generateCertificate'])
+    ->name('enrollments.generateCertificate');
 
     

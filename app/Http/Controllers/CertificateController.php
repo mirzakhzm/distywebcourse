@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Certificate;
+use App\Models\Enrollment;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -40,6 +42,4 @@ class CertificateController extends Controller
     
         return redirect()->back()->with('error', 'Certificate file not found.');
     }
-    
-    
 }

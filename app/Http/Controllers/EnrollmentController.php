@@ -33,6 +33,7 @@ class EnrollmentController extends Controller
             'course_id' => 'required|exists:courses,id',
         ]);
     
+        // Membuat objek Enrollment baru
         $enrollment = new Enrollment();
         $enrollment->name = $request->input('name');
         $enrollment->email = $request->input('email');
@@ -40,10 +41,12 @@ class EnrollmentController extends Controller
         $enrollment->paket = $request->input('paket');
         $enrollment->course_id = $request->input('course_id');
         $enrollment->user_id = Auth::id();  // Menyertakan user_id yang sedang login
+    
+        // Simpan data pendaftaran ke database
         $enrollment->save();
-        
+    
         // Redirect ke halaman sukses
-        return redirect('/courses')->with('success', 'Pendaftaran berhasil!');
+        return redirect('/pembayaran')->with('success', 'Pendaftaran berhasil!');
     }
     
     public function index()
